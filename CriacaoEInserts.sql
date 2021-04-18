@@ -249,7 +249,7 @@ VALUES
 ('Vozes','contato@vozes.com','A'),
 ('VR Editora','contato@vreditora.com','A'),
 ('WMF Martins Fontes','contato@wmfmartinsfontes.com','A'),
-('Zahar','contato@zahar.com','I'),
+('Zahar','contato@zahar.com','I')
 GO
 
 -- INSERINDO EM AUTORES
