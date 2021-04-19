@@ -12,9 +12,9 @@ GO
 USE BDEditora
 GO
 
-/********************************************************************************************************************************************************************************
-                    C R I A C A O   D A S   T A B E L A S                    
-********************************************************************************************************************************************************************************/
+/******************************************************************************
+                    C R I A C A O   D A S   T A B E L A S
+*******************************************************************************/
 
 -- CASO DER ERRADO E PRECISAR RECRIAR AS TABELAS
 -- SÓ RODAR O COMANDO ABAIXO
@@ -92,9 +92,9 @@ CREATE TABLE [dbo].[LivroAutor]
 );
 GO
 
-/********************************************************************************************************************************************************************************
-                    INSERINDO DADOS NAS TABELAS									  
-********************************************************************************************************************************************************************************/
+/******************************************************************************
+                    INSERINDO NAS TABELAS                    
+*******************************************************************************/
 
 -- INSERINDO EM PAISES
 -- Insert rows into table 'Pais' in schema '[dbo]'
@@ -259,7 +259,7 @@ INSERT INTO [dbo].[Autor]
     [Nome], [DataNascimento], [Sexo], [Pais]
 )
 VALUES
-('Stephenie Meyer', '12-24-1973', 'F', 1 --Americana)
+('Stephenie Meyer', '12-24-1973', 'F', 1)
 GO
 
 -- INSERINDO EM LIVROS
@@ -269,6 +269,103 @@ INSERT INTO [dbo].[Livro]
     [Titulo], [DataDePublicacao], [QtdPaginas], [ISBN], [Categoria]
 )
 VALUES
+
+-- Categoria Ficção
+
+-- Editora Intrínceca
+('Sol da meia-noite', '2018-08-23', '536', '978-65-55600-29-2', 1),
+('O homem de giz', '2000-08-23', '272', '978-85-51002-93-3', 1),
+('Mitologia nórdica', '2000-08-13', '288', '978-85-51001-28-8', 1),
+('Stranger Things: Raízes do mal', '1960-08-12', '304', '978-85-51004-36-4', 1),
+('Teto para dois', '1961-08-12', '400', '978-85-51005-41-5', 1),
+('A vida mentirosa dos adultos', '1962-08-12', '432', '978-85-51006-37-5', 1),
+('O que aconteceu com Annie', '1962-08-22', '288', '978-85-51004-75-3', 1),
+('Coleção Jojo Moyes', '1952-08-22', '1040', '978-85-51005-60-6', 1),
+('Mister', '1952-09-22', '432', '978-85-51005-15-6', 1),
+('Um caminho para a liberdade', '1980-09-10', '368', '978-85-51005-45-3', 1),
+('Stranger Things: Cidade nas trevas', '1971-08-12', '384', '978-85-51006-29-0', 1),
+('Rede de sussurros', '1974-08-12', '384', '978-85-51005-28-6', 1),
+('Lua nova', '1981-12-12', '432', '978-85-98078-35-9', 1),
+('Eclipse', '2010-12-12', '464', '978-85-98078-41-0', 1),
+('Amanhecer', '2009-12-12', '576', '978-85-98078-46-5', 1),
+('Caixa de pássaros', '2008-12-12', '272', '978-85-80576-52-8', 1),
+('Pátria', '2000-09-02', '512', '978-85-51004-94-4', 1),
+('Me chame pelo seu nome', '2001-12-02', '288', '978-85-51002-73-5', 1),
+('Crepúsculo', '2011-01-02', '384', '978-85-98078-30-4', 1),
+('Deuses americanos', '2012-01-02', '576', '978-85-51000-72-4', 1),
+('Um lugar bem longe daqui', '1912-02-20', '336', '978-85-51004-86-9', 1),
+('A última festa', '1980-01-11', '304', '978-85-51005-72-9', 1),
+
+-- Editora Sextante
+('A sala das borboletas', '1981-02-20', '496', '978-85-30600-49-5', 1),
+('A irmã do sol', '1990-02-20', '688', '978-85-30601-64-5', 1),
+('O crepúsculo e a aurora', '1989-02-20', '704', '978-65-55650-18-1', 1),
+('Poesia que transforma', '2010-02-20', '192', '978-85-43105-75-8', 1),
+('Coleção Julia Quinn', '2011-12-21', '864', '978-85-30600-29-78', 1),
+('História de um grande amor', '2012-03-13', '288', '978-85-30601-08-9', 1),
+('Um carinho na alma', '2015-06-13', '160', '978-85-43108-07-0', 1),
+('O retorno', '2011-07-04', '288', '978-65-55650-45-7', 1),
+('O duque e eu', '2012-10-14', '288', '978-85-80411-46-1', 1),
+('Uma noiva rebelde', '2009-11-01', '272', '978-65-55650-08-2', 1),
+('De repente uma noite de paixão', '2008-12-04', '272', '978-85-30601-25-6', 1),
+('Origem', '2011-06-04', '432', '978-85-80417-66-1', 1),
+('Inferno', '2005-08-14', '448', '978-85-80416-29-9', 1),
+('Na margem do rio Piedra eu sentei e chorei', '2003-03-14', '208', '978-85-75428-01-6', 1),
+('A soma de todos os beijos', '2002-04-24', '272', '978-85-80416-66-4', 1),
+('O que acontece em Londres', '1990-04-24', '288', '978-85-30601-36-2', 1),
+('O homem mais feliz da história', '1991-11-14', '336', '978-85-43105-27-7', 1),
+('A travessia', '1981-10-04', '240', '978-85-80415-14-8', 1),
+('Já disse que te amo?', '1982-05-04', '336', '978-85-80419-59-7', 1),
+
+-- Grupo Companhia das Letras
+('A revolução dos bichos', '1954-08-17', '156', '978-85-35909-55-5', 1),
+('1984', '1949-07-08', '416', '978-85-35914-84-9', 1),
+('Essa gente', '1949-07-08', '200', '978-85-35932-95-9', 1),
+('It - A coisa', '1970-11-08', '1104', '978-85-60280-94-0', 1),
+('Box - After', '1970-12-18', '2352', '978-85-84391-72-1', 1),
+('Os sete maridos de Evelyn Hugo', '1988-03-18', '360', '978-85-84391-50-9', 1),
+('O iluminado', '1968-02-03', '520', '978-85-56510-46-4', 1),
+('Doutor sono', '1969-12-04', '480', '978-85-81052-43-4', 1),
+('Joyland', '1971-10-04', '240', '978-85-81052-98-4', 1),
+('O iluminado', '1968-02-03', '464', '978-85-81050-48-5', 1),
+('After - Vol. 1', '1938-01-03', '528', '978-85-65530-82-8', 1),
+('Nove noites', '1991-05-03', '176', '978-85-35926-70-5', 1),
+('Nove noites ( edição de bolso)', '1991-05-03', '152', '978-85-35908-61-9', 1),
+('Ensaio sobre a cegueira', '1966-02-03', '312', '978-85-71644-95-3', 1),
+
+-- Grupo Editorial Record
+('A paciente silenciosa', '1976-12-03', '350', '978-85-01116-43-7', 1),
+('Longa pétala de mar', '1977-02-14', '280', '978-85-28624-40-3', 1),
+('O rei perverso', '1987-06-12', '308', '978-85-01118-83-7', 1),
+('A peste', '1923-06-11', '288', '978-85-01111-24-1', 1),
+('Amor sob encomenda', '1980-04-12', '546', '978-85-76867-48-7', 1),
+('Box - A garota do calendário ( janeiro a dezembro)', '1991-12-11', '1812', '978-85-01303-52-3', 1),
+('O sol é para todos', '1992-02-11', '364', '978-85-03009-49-2', 1),
+('Um dia chegarei a Sagres', '2000-02-22', '512', '978-65-55871-12-8', 1),
+('Um defeito de cor', '2001-11-17', '952', '978-85-01071-75-0', 1),
+('Kit - Perdida', '1999-10-11', '2254', '978-85-01303-36-3', 1),
+('O amor nos tempos de cólera', '1994-11-09', '432', '978-85-01028-72-3', 1),
+
+-- Editora Planeta
+('Pra você que sente demais', '1994-10-19', '176', '978-85-01028-72-3', 1),
+('O tatuador de Auschwitz', '1994-10-19', '240', '978-85-42215-69-4', 1),
+('Para todas as pessoas intensas', '2000-11-13', '224', '978-85-42215-54-0', 1),
+('Meu corpo minha casa', '2012-01-12', '192', '978-65-55351-99-6', 1),
+('23 motivos para não se apaixonar - Autografado', '2011-05-12', '160', '978-65-55351-94-1', 1),
+('Livre para recomeçar', '2011-05-19', '400', '978-85-42216-82-0', 1),
+('Só você pode curar seu coração quebrado', '1887-09-19', '192', '978-85-42216-84-4', 1),
+('Pra você que teve um dia ruim', '2015-01-19', '192', '978-85-42215-27-4', 1),
+('O que o Sol faz com as flores', '2002-02-03', '256', '978-85-42212-33-4', 1),
+
+-- Editora Novo Século
+('Eleanor & Park', '2012-02-03', '287', '978-85-42810-39-4', 1),
+('Box Franz Kafka', '2009-04-13', '704', '978-85-42812-07-7', 1),
+('Box - Terríveis mestres', '2009-05-12', '676', '978-85-42816-93-8', 1),
+('Fangirl (slim)', '2010-10-12', '320', '9978-85-42816-04-4', 1),
+('Eleanor & Park', '2012-02-03', '328', '978-85-42801-25-5', 1),
+('A realidade de Madhu', '2011-11-11', '280', '78-85-42803-17-4', 1),
+('Anexos (slim)', '2011-04-12', '256', '978-85-42816-05-1', 1),
+
 
 -- Categoria Não Ficção
 ------------ Companhia das Letras
@@ -388,8 +485,6 @@ VALUES
 ('Box - O essencial da 2ª guerra mundial','2015-07-2', 384,'978-85-65042-47-5',2),
 ('Box - O essencial da política','2006-02-28', 480,'978-85-65042-55-0',2),
 
-
-
 -- Categoria AutoAjuda
 ('Nunca foi sorte','2020-03-07', 192,'978-85-93156-95-3',3),
 ('Desperte seu poder','2018-05-12', 208,'978-85-93156-28-1',3),
@@ -486,67 +581,65 @@ VALUES
 ('Como convencer alguém em 90 segundos','2020-10-04', 200,' 978-85-79303-19-7',3),
 ('O discreto charme do intestino','2020-05-30', 308,' 978-85-46901-75-3',3),
 
+
 --Categoria Negócios
-('Decida vencer', '2011', '208', '978-85-45203-89-6', 5 -- Negócios),
-('O poder da autorresponsabilidade', '2013', '160', '978-85-45202-21-9', 5 -- Negócios),
-('Seja foda!', '2019', '208', '978-85-45203-89-6', 5 -- Negócios),
-('Os segredos da mente milionária', '2012', '176', '978-85-75422-39-7', 5 -- Negócios),
-('Pai rico, pai pobre - Edição de 20 anos', '2010', '336', '978-85-50801-48-3', 5 -- Negócios),
-('Quem pensa enriquece: o legado', '2008', '364', '978-85-68014-54-7', 5 -- Negócios),
-('O poder da ação', '2002', '256', '978-85-45200-34-5', 5 -- Negócios),
-('O homem mais rico da Babilônia', '2003', '160', '978-85-95081-53-6', 5 -- Negócios),
-('Me poupe!', '2001', '176', '978-85-43105-81-9', 5 -- Negócios),
-('Enfodere-se!', '2002', '208', '978-65-80435-23-4', 5 -- Negócios),
-('Essencialismo', '2011', '272', '978-85-43102-14-6', 5 -- Negócios),
-('O poder da ação ( edição de luxo)', '2007', '256', '978-85-45203-72-8', 5 -- Negócios),
-('O investidor inteligente', '2009', '672', '978-85-95080-80-5', 5 -- Negócios),
-('Na raça', '2015', '240', '978-85-51006-05-4', 5 -- Negócios),
-('Rápido e devagar', '2004', '608', '978-85-39003-83-9', 5 -- Negócios),
-('Quem pensa enriquece : o legado (edição de bolso)', '2018', '144', '978-65-50470-16-6', 5 -- Negócios),
-('O jeito Harvard de ser feliz', '2011', '208', '978-85-45203-89-6', 5 -- Negócios),
-('Vade Mecum Saraiva 2020- 29ª Edição', '2013', '160', '978-85-45202-21-9', 5 -- Negócios),
-('O seu direito de ser rico', '2019', '208', '978-85-45203-89-6', 5 -- Negócios),
-('Box - Paulo Vieira', '2012', '944', '978-85-45202-15-8', 5 -- Negócios),
-('Assuma o comando da sua vida', '2008', '192', '978-65-55440-50-8', 5 -- Negócios),
-('Faça o tempo enriquecer você', '2020', '224', '978-85-45203-90-2', 5 -- Negócios),
-('Sonhe, acredite e faça', '2017', '192', '978-65-55440-29-4', 5 -- Negócios),
-('Excelência para obstinados', '2016', '192', '978-85-45203-51-3', 5 -- Negócios),
-('O futuro do dinheiro', '2015', '208', '978-85-45203-70-4', 5 -- Negócios),
-('Mentalidade', '2014', '224', '978-85-45201-40-3', 5 -- Negócios),
-('Gestão fácil', '2017', '176', '978-85-45203-05-6', 5 -- Negócios),
-('Bora varejo', '2018', '224', '978-65-55440-12-6', 5 -- Negócios),
-('A decisão que o mundo precisa', '2021', '192', '978-85-45203-30-8', 5 -- Negócios),
-('Viva a sua melhor versão', '2019', '192', '978-65-55440-48-5', 5 -- Negócios),
-('Crie seu mercado no mundo digital', '2011', '208', '978-85-45202-68-4', 5 -- Negócios),
-('Empreendedores', '2012', '240', '978-85-45203-31-5', 5 -- Negócios),
-('Estratégia adaptativa', '2020', '304', '978-65-55440-32-4', 5 -- Negócios),
-('Audaz', '2017', '224', '978-85-45202-67-7', 5 -- Negócios),
-('Faça suas próprias leis', '2014', '224', '978-85-45202-76-9', 5 -- Negócios),
-('Faça simples', '2002', '192', '978-85-45203-35-3', 5 -- Negócios),
-('Sonhar alto, pensar grande', '2014', '224', '978-85-45200-92-5', 5 -- Negócios),
-('Acorda! Sonhar não basta', '2017', '128', '978-85-45202-58-5', 5 -- Negócios),
-('O único livro que todo empresário precisa ler', '2018', '160', '978-85-45201-95-3', 5 -- Negócios),
-('Desperte seu conhecimento milionário', '2021', '160', '978-85-45203-32-2', 5 -- Negócios),
-('Se vira, moleque', '2019', '224', '978-65-55440-21-8', 5 -- Negócios),
-('12 princípios para uma vida extraordinária', '2011', '160', '978-85-45203-65-0', 5 -- Negócios),
-('A sabedoria do dinheiro', '2012', '224', '978-85-45203-94-0', 5 -- Negócios),
-('Transformação radical', '2020', '304', '978-65-55440-46-1', 5 -- Negócios),
-('Seja um líder de heróis', '2017', '256', '978-85-45203-27-8', 5 -- Negócios),
-('Bora vender', '2014', '224', '978-85-45203-21-6', 5 -- Negócios),
-('Quero ficar rico', '2002', '144', '978-85-45201-22-9', 5 -- Negócios),
-('A nova lógica do sucesso', '2002', '192', ' 978-85-45200-50-5', 5 -- Negócios),
-('Problemas? Oba!', '2014', '160', ' 978-85-73127-53-9', 5 -- Negócios),
-('O novo código da cultura', '2017', '224', '978-85-45203-29-2', 5 -- Negócios),
-('Pai rico, pai pobre - Edição de 20 anos', '2011', '336', '978-85-50801-48-3', 5 -- Negócios),
-('De zero a 50 milhões', '2012', '240', '978-65-55201-25-3', 5 -- Negócios),
-('A universidade da Berkshire Hathaway', '2020', '384', '978-85-50810-58-4', 5 -- Negócios),
-('Empatia assertiva', '2017', '328', '978-85-50810-78-2', 5 -- Negócios),
-('Keynes e os Pós-Keyneasianos', '2014', '288', '978-85-50811-78-9', 5 -- Negócios),
-('Dominando o Ciclo de Mercado', '2002', '336', '978-85-50808-78-9', 5 -- Negócios),
-('Master selling', '2002', '256', ' 978-65-55201-36-9', 5 -- Negócios),
-('Empresas feitas para vencer', '2014', '368', '978-85-50805-24-5', 5 -- Negócios),
-('Empresas humanizadas', '2017', '368', '978-85-50807-53-9', 5 -- Negócios),
-
-
-
-
+('Decida vencer', '2011', '208', '978-85-45203-89-6', 5),
+('O poder da autorresponsabilidade', '2013', '160', '978-85-45202-21-9', 5),
+('Seja foda!', '2019', '208', '978-85-45203-89-6', 5),
+('Os segredos da mente milionária', '2012', '176', '978-85-75422-39-7', 5),
+('Pai rico, pai pobre - Edição de 20 anos', '2010', '336', '978-85-50801-48-3', 5),
+('Quem pensa enriquece: o legado', '2008', '364', '978-85-68014-54-7', 5),
+('O poder da ação', '2002', '256', '978-85-45200-34-5', 5),
+('O homem mais rico da Babilônia', '2003', '160', '978-85-95081-53-6', 5),
+('Me poupe!', '2001', '176', '978-85-43105-81-9', 5),
+('Enfodere-se!', '2002', '208', '978-65-80435-23-4', 5),
+('Essencialismo', '2011', '272', '978-85-43102-14-6', 5),
+('O poder da ação ( edição de luxo)', '2007', '256', '978-85-45203-72-8', 5),
+('O investidor inteligente', '2009', '672', '978-85-95080-80-5', 5),
+('Na raça', '2015', '240', '978-85-51006-05-4', 5),
+('Rápido e devagar', '2004', '608', '978-85-39003-83-9', 5),
+('Quem pensa enriquece : o legado (edição de bolso)', '2018', '144', '978-65-50470-16-6', 5),
+('O jeito Harvard de ser feliz', '2011', '208', '978-85-45203-89-6', 5),
+('Vade Mecum Saraiva 2020- 29ª Edição', '2013', '160', '978-85-45202-21-9', 5),
+('O seu direito de ser rico', '2019', '208', '978-85-45203-89-6', 5),
+('Box - Paulo Vieira', '2012', '944', '978-85-45202-15-8', 5),
+('Assuma o comando da sua vida', '2008', '192', '978-65-55440-50-8', 5),
+('Faça o tempo enriquecer você', '2020', '224', '978-85-45203-90-2', 5),
+('Sonhe, acredite e faça', '2017', '192', '978-65-55440-29-4', 5),
+('Excelência para obstinados', '2016', '192', '978-85-45203-51-3', 5),
+('O futuro do dinheiro', '2015', '208', '978-85-45203-70-4', 5),
+('Mentalidade', '2014', '224', '978-85-45201-40-3', 5),
+('Gestão fácil', '2017', '176', '978-85-45203-05-6', 5),
+('Bora varejo', '2018', '224', '978-65-55440-12-6', 5),
+('A decisão que o mundo precisa', '2021', '192', '978-85-45203-30-8', 5),
+('Viva a sua melhor versão', '2019', '192', '978-65-55440-48-5', 5),
+('Crie seu mercado no mundo digital', '2011', '208', '978-85-45202-68-4', 5),
+('Empreendedores', '2012', '240', '978-85-45203-31-5', 5),
+('Estratégia adaptativa', '2020', '304', '978-65-55440-32-4', 5),
+('Audaz', '2017', '224', '978-85-45202-67-7', 5),
+('Faça suas próprias leis', '2014', '224', '978-85-45202-76-9', 5),
+('Faça simples', '2002', '192', '978-85-45203-35-3', 5),
+('Sonhar alto, pensar grande', '2014', '224', '978-85-45200-92-5', 5),
+('Acorda! Sonhar não basta', '2017', '128', '978-85-45202-58-5', 5),
+('O único livro que todo empresário precisa ler', '2018', '160', '978-85-45201-95-3', 5),
+('Desperte seu conhecimento milionário', '2021', '160', '978-85-45203-32-2', 5),
+('Se vira, moleque', '2019', '224', '978-65-55440-21-8', 5),
+('12 princípios para uma vida extraordinária', '2011', '160', '978-85-45203-65-0', 5),
+('A sabedoria do dinheiro', '2012', '224', '978-85-45203-94-0', 5),
+('Transformação radical', '2020', '304', '978-65-55440-46-1', 5),
+('Seja um líder de heróis', '2017', '256', '978-85-45203-27-8', 5),
+('Bora vender', '2014', '224', '978-85-45203-21-6', 5),
+('Quero ficar rico', '2002', '144', '978-85-45201-22-9', 5),
+('A nova lógica do sucesso', '2002', '192', ' 978-85-45200-50-5', 5),
+('Problemas? Oba!', '2014', '160', ' 978-85-73127-53-9', 5),
+('O novo código da cultura', '2017', '224', '978-85-45203-29-2', 5),
+('Pai rico, pai pobre - Edição de 20 anos', '2011', '336', '978-85-50801-48-3', 5),
+('De zero a 50 milhões', '2012', '240', '978-65-55201-25-3', 5),
+('A universidade da Berkshire Hathaway', '2020', '384', '978-85-50810-58-4', 5),
+('Empatia assertiva', '2017', '328', '978-85-50810-78-2', 5),
+('Keynes e os Pós-Keyneasianos', '2014', '288', '978-85-50811-78-9', 5),
+('Dominando o Ciclo de Mercado', '2002', '336', '978-85-50808-78-9', 5),
+('Master selling', '2002', '256', ' 978-65-55201-36-9', 5),
+('Empresas feitas para vencer', '2014', '368', '978-85-50805-24-5', 5),
+('Empresas humanizadas', '2017', '368', '978-85-50807-53-9', 5)
+GO
