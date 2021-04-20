@@ -111,7 +111,7 @@ VALUES ('Brasil', 'BR', 'Brasileiro'),
        ('Coreia do Sul', 'KOR', 'Sul-coreano'),
        ('Australia', 'AU', 'Australiano'),
        ('Irlanda', 'IE', 'Irlandes'),
-       ('India, 'IN', 'Indiano')
+       ('India', 'IN', 'Indiano')
        ('Inglaterra', 'UK', 'Inglês'),
        ('Canada', 'CA', 'Canadense')
 GO
