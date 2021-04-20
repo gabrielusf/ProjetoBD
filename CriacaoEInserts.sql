@@ -104,16 +104,9 @@ INSERT INTO [dbo].[Pais]
 )
 VALUES ('Brasil', 'BR', 'Brasileiro'),
        ('Estado Unidos', 'USA', 'Americano'),
-       ('Inglaterra', 'UK', 'Inglês'),
-       ('Canada', 'CA', 'Canadense'),
-       ('Alemanha', 'DE', 'Alemão'),
-       ('Espanha', 'ES', 'Espanhol'),
-       ('Coreia do Sul', 'KOR', 'Sul-coreano'),
-       ('Australia', 'AU', 'Australiano'),
-       ('Irlanda', 'IE', 'Irlandes'),
-       ('India, 'IN', 'Indiano')
+	   ('Inglaterra', 'UK', 'Inglês'),
+	   ('Canada', 'CA', 'Canadense')
 GO
-
 
 -- INSERINDO CATEGORIAS
 -- Insert rows into table 'Categoria' in schema '[dbo]'
@@ -137,7 +130,7 @@ INSERT INTO [dbo].[Editora]
 VALUES 
 ('Academia','contato@academia.com','I'),
 ('Aeroplano Editora','contato@aeroplanoeditora.com','A'),
-('Alaúde','contato@alaude.com','A'),
+('Alaúde','contato@alaúde.com','A'),
 ('Aleph','contato@aleph.com','I'),
 ('Aletria','contato@aletria.com','A'),
 ('Alta Books','contato@altabooks.com','A'),
@@ -177,7 +170,7 @@ VALUES
 ('Editora CLA Cultura','contato@editoraclacultura.com','I'),
 ('Editora Perspectiva','contato@editoraperspectiva.com','A'),
 ('Elsevier','contato@elsevier.com','A'),
-('Essência','contato@essencia.com','A'),
+('Essência','contato@essência.com','A'),
 ('Estação Brasil','contato@estacaobrasil.com','I'),
 ('Faro Editorial','contato@faroeditorial.com','A'),
 ('Fons Sapientiae','contato@fonssapientiae.com','A'),
@@ -199,14 +192,14 @@ VALUES
 ('IBEP','contato@ibep.com','A'),
 ('Intrínseca','contato@intrinseca.com','A'),
 ('José Olympio','contato@joseolympio.com','A'),
-('L&PM','contato@lpm.com','I'),
-('L&PM POCKET','contato@lpmpocket.com','I'),
+('L&PM','contato@l&pm.com','I'),
+('L&PM POCKET','contato@l&pmpocket.com','I'),
 ('LeYa','contato@leya.com','A'),
 ('Literare Books','contato@literarebooks.com','A'),
 ('Loyola','contato@loyola.com','A'),
 ('Luz da Serra','contato@luzdaserra.com','A'),
-('M Books','contato@mbooks.com','A'),
-('MAP Mentes de Alta Performance','contato@map.com','A'),
+('M.Books','contato@m.books.com','A'),
+('MAP - Mentes de Alta Performance','contato@map.com','A'),
 ('Martin Claret','contato@martinclaret.com','A'),
 ('Martins Fontes','contato@martinsfontes.com','A'),
 ('Matrix Editora','contato@matrixeditora.com','I'),
@@ -214,11 +207,11 @@ VALUES
 ('Melhoramentos','contato@melhoramentos.com','A'),
 ('Metanoia Editora','contato@metanoiaeditora.com','A'),
 ('Mundo Cristão','contato@mundocristao.com','A'),
-('N1 Edições','contato@n1edicoes.com','A'),
+('N-1 Edições','contato@n-1ediçoes.com','A'),
 ('Nobel','contato@nobel.com','I'),
 ('Nova Fronteira','contato@novafronteira.com','I'),
 ('Novo Conceito','contato@novoconceito.com','A'),
-('Novo Século','contato@novoseculo.com','A'),
+('Novo Século','contato@novoséculo.com','A'),
 ('Objetiva','contato@objetiva.com','A'),
 ('On Line Editora','contato@onlineeditora.com','A'),
 ('Outro Planeta','contato@outroplaneta.com','A'),
@@ -266,86 +259,7 @@ INSERT INTO [dbo].[Autor]
     [Nome], [DataNascimento], [Sexo], [Pais]
 )
 VALUES
-
------------- Auutores de Livros de AutoAjuda
-('Adriana Sant anna','1964-11-27','F',1),
-('José Roberto Marques','1999-04-25','M',1),
-('Karina Peloi','1945-09-16','F',1),
-('Paula Abreu','1978-01-13','F',1),
-('Andréa Fernanda Morais','1983-04-30','F',1),
-('Cris Linnares','1991-05-17','F',1),
-('Anderson Cavalcante','1992-07-09','M',1),
-('Everton Rosa','1965-06-01','M',1),
-('Gelong Thubten','1772-10-17','M',3),
-('Rick Chesther','1940-12-18','M',1),
-('Elainne Ourives','2000-10-13','F',1),
-('Eduardo Volpato','1015-04-12','M',1),
-('Paulo de Paula / Iveraldo Guimarães','264-01-26','M',1),
-('Tadashi Kadomoto','73-05-04','M',1),
-('Luiz Fernando Lucas','1626-07-08','M',1),
-('Baby Pontello','1973-02-01','F',1),
-('Robson Hamuche','1709-10-05','M',1),
-('Rogério Liporaci','1698-03-24','M',1),
-('José Luiz Tejon','1982-03-01','M',1),
-('Roberto Shinyashiki','1978-06-16','M',1),
-('Brené Brown','1920-07-10','M',2),
-('Ana Claudia Quintana Arantes','1965-09-27','F',1),
-('Eckhart Tolle','1945-04-23','M',4),
-('Augusto Cury','1928-06-14','M',1),
-('Haemin Sunim','1961-10-17','F',7),
-('Dale Carnegie','1929-08-16','F',2),
-('Rhonda Byrne','1948-05-10','F',8),
-('Elma Van Vliet','1762-06-12','M',2),
-('Jordan B. Peterson','1941-08-20','M',4),
-('Chip Heath/ Dan Heath','1914-11-18','M',2),
-('Kadú Pimentel','1934-10-23','M',1),
-('Richard Bandler / Alessio Roberti ','1922-08-10','M',3),
-('James Clear','1966-01-05','M',2),
-('David Níven','1930-02-18','M',3),
-('Mike Bayer','1980-11-20','M',2),
-('Scott Galloway','1906-07-21','M',2),
-('Napoleon Hill','1930-06-28','M',2),
-('Dr. Joe Dizpenza','1913-04-29','M',3),
-('Hal Elrod','1989-08-16','M',2),
-('Joseph Murphy','1946-10-12','M',9),
-('Preethaji / Krishnaji','1969-10-10','M',10),
-('Spencer Johnson','1915-02-24','M',2),
-('Robert Fisher','1913-04-27','M',2),
-('William Sanches','1957-08-18','F',1),
-('Patrícia Cândido','1985-12-30','M',1),
-('Bruno J. Gimenes','1956-03-11','M',1),
-('Tiago Fonseca','1926-02-01','M',1),
-('Mario Sergio Cortella / Leandro Karnal','1987-03-22','M',1),
-('Pe. Fábio de Melo','1930-07-06','M',1),
-('Mario Sergio Cortella','1937-03-06','M',1),
-('Tiago Brunet','1889-10-17','M',1),
-('Pe. Marcos Rogério','1862-10-3','M',1),
-('Mark Manson','1965-10-29','F',2),
-('Isabela Freitas','1913-09-17','M',1),
-('Tony Allysson','1929-11-17','M',1),
-('Pe. Renato Andrade / Astromar Braga','1957-01-09','M',1),
-('Pe. Antonio José','1967-04-08','F',1),
-('Andreza Carício','1856-07-03','M',1),
-('Mauricio Sita','1902-11-03','F',1),
-('Alexandra Fabri','1969-11-10','F',1),
-('Flora Victoria','1960-07-19','M',1),
-('Frei Salvador do Coração de Jesus','1911-04-07','M',1),
-('Jorge Arturo Estévez','1883-01-23','M',2),
-('C. Torres Pastorino','1916-07-27','M',1),
-('Edrian Josué Pasini','1939-04-25','M',3),
-('Wagner de Assis','1439-10-21','F',1),
-('Samantha Silvany','1933-03-13','M',1),
-('Padre Reginaldo Manzotti','1984-05-03','M',1),
-('Baltasar Gracián','1996-09-21','M',6),
-('Charles Duhigg','1913-02-15','M',2),
-('Gary Chapman','1940-11-04','M',2),
-('Raquel Quartiero','1906-08-06','F',1),
-('Haroldo J. Rahm / Maria J. R. Lamengo','1960-04-21','M',1),
-('Joe Vitale/ Ihaleakala Hew Len','1989-03-29','M',2),
-('Bia Lombardi','1867-03-30','F',1),
-('Nicholas Boothman','1975-01-01','M',3),
-('Giulia Enders','1940-12-18','F',5),
-
+('Stephenie Meyer', '12-24-1973', 'F', 1)
 GO
 
 -- INSERINDO EM LIVROS
@@ -691,63 +605,124 @@ VALUES
 
 
 --Categoria Negócios
-('Decida vencer', '2011', '208', '978-85-45203-89-6', 5),
-('O poder da autorresponsabilidade', '2013', '160', '978-85-45202-21-9', 5),
-('Seja foda!', '2019', '208', '978-85-45203-89-6', 5),
-('Os segredos da mente milionária', '2012', '176', '978-85-75422-39-7', 5),
-('Pai rico, pai pobre - Edição de 20 anos', '2010', '336', '978-85-50801-48-3', 5),
-('Quem pensa enriquece: o legado', '2008', '364', '978-85-68014-54-7', 5),
-('O poder da ação', '2002', '256', '978-85-45200-34-5', 5),
-('O homem mais rico da Babilônia', '2003', '160', '978-85-95081-53-6', 5),
-('Me poupe!', '2001', '176', '978-85-43105-81-9', 5),
-('Enfodere-se!', '2002', '208', '978-65-80435-23-4', 5),
-('Essencialismo', '2011', '272', '978-85-43102-14-6', 5),
-('O poder da ação ( edição de luxo)', '2007', '256', '978-85-45203-72-8', 5),
-('O investidor inteligente', '2009', '672', '978-85-95080-80-5', 5),
-('Na raça', '2015', '240', '978-85-51006-05-4', 5),
-('Rápido e devagar', '2004', '608', '978-85-39003-83-9', 5),
-('Quem pensa enriquece : o legado (edição de bolso)', '2018', '144', '978-65-50470-16-6', 5),
-('O jeito Harvard de ser feliz', '2011', '208', '978-85-45203-89-6', 5),
-('Vade Mecum Saraiva 2020- 29ª Edição', '2013', '160', '978-85-45202-21-9', 5),
-('O seu direito de ser rico', '2019', '208', '978-85-45203-89-6', 5),
-('Box - Paulo Vieira', '2012', '944', '978-85-45202-15-8', 5),
-('Assuma o comando da sua vida', '2008', '192', '978-65-55440-50-8', 5),
-('Faça o tempo enriquecer você', '2020', '224', '978-85-45203-90-2', 5),
-('Sonhe, acredite e faça', '2017', '192', '978-65-55440-29-4', 5),
-('Excelência para obstinados', '2016', '192', '978-85-45203-51-3', 5),
-('O futuro do dinheiro', '2015', '208', '978-85-45203-70-4', 5),
-('Mentalidade', '2014', '224', '978-85-45201-40-3', 5),
-('Gestão fácil', '2017', '176', '978-85-45203-05-6', 5),
-('Bora varejo', '2018', '224', '978-65-55440-12-6', 5),
-('A decisão que o mundo precisa', '2021', '192', '978-85-45203-30-8', 5),
-('Viva a sua melhor versão', '2019', '192', '978-65-55440-48-5', 5),
-('Crie seu mercado no mundo digital', '2011', '208', '978-85-45202-68-4', 5),
-('Empreendedores', '2012', '240', '978-85-45203-31-5', 5),
-('Estratégia adaptativa', '2020', '304', '978-65-55440-32-4', 5),
-('Audaz', '2017', '224', '978-85-45202-67-7', 5),
-('Faça suas próprias leis', '2014', '224', '978-85-45202-76-9', 5),
-('Faça simples', '2002', '192', '978-85-45203-35-3', 5),
-('Sonhar alto, pensar grande', '2014', '224', '978-85-45200-92-5', 5),
-('Acorda! Sonhar não basta', '2017', '128', '978-85-45202-58-5', 5),
-('O único livro que todo empresário precisa ler', '2018', '160', '978-85-45201-95-3', 5),
-('Desperte seu conhecimento milionário', '2021', '160', '978-85-45203-32-2', 5),
-('Se vira, moleque', '2019', '224', '978-65-55440-21-8', 5),
-('12 princípios para uma vida extraordinária', '2011', '160', '978-85-45203-65-0', 5),
-('A sabedoria do dinheiro', '2012', '224', '978-85-45203-94-0', 5),
-('Transformação radical', '2020', '304', '978-65-55440-46-1', 5),
-('Seja um líder de heróis', '2017', '256', '978-85-45203-27-8', 5),
-('Bora vender', '2014', '224', '978-85-45203-21-6', 5),
-('Quero ficar rico', '2002', '144', '978-85-45201-22-9', 5),
-('A nova lógica do sucesso', '2002', '192', ' 978-85-45200-50-5', 5),
-('Problemas? Oba!', '2014', '160', ' 978-85-73127-53-9', 5),
-('O novo código da cultura', '2017', '224', '978-85-45203-29-2', 5),
-('Pai rico, pai pobre - Edição de 20 anos', '2011', '336', '978-85-50801-48-3', 5),
-('De zero a 50 milhões', '2012', '240', '978-65-55201-25-3', 5),
-('A universidade da Berkshire Hathaway', '2020', '384', '978-85-50810-58-4', 5),
-('Empatia assertiva', '2017', '328', '978-85-50810-78-2', 5),
-('Keynes e os Pós-Keyneasianos', '2014', '288', '978-85-50811-78-9', 5),
-('Dominando o Ciclo de Mercado', '2002', '336', '978-85-50808-78-9', 5),
-('Master selling', '2002', '256', ' 978-65-55201-36-9', 5),
-('Empresas feitas para vencer', '2014', '368', '978-85-50805-24-5', 5),
-('Empresas humanizadas', '2017', '368', '978-85-50807-53-9', 5)
+
+-- Editora Gente
+('Decida vencer', '2011-06-01', '208', '978-85-45203-89-6', 5),
+('O poder da autorresponsabilidade', '2013-07-02', '160', '978-85-45202-21-9', 5),
+('O poder da ação', '2002-09-02', '256', '978-85-45200-34-5', 5),
+('O poder da ação ( edição de luxo)', '2007-03-05', '256', '978-85-45203-72-8', 5),
+('Box - Paulo Vieira', '2012-01-02', '944', '978-85-45202-15-8', 5),
+('Assuma o comando da sua vida', '2008-02-03', '192', '978-65-55440-50-8', 5),
+('Faça o tempo enriquecer você', '2020-03-04', '224', '978-85-45203-90-2', 5),
+('Sonhe, acredite e faça', '2017-04-05', '192', '978-65-55440-29-4', 5),
+('Excelência para obstinados', '2016-05-06', '192', '978-85-45203-51-3', 5),
+('O futuro do dinheiro', '2015-06-07', '208', '978-85-45203-70-4', 5),
+('Mentalidade', '2014-07-08', '224', '978-85-45201-40-3', 5),
+('Gestão fácil', '2017-08-09', '176', '978-85-45203-05-6', 5),
+('Bora varejo', '2018-09-10', '224', '978-65-55440-12-6', 5),
+('A decisão que o mundo precisa', '2021-01-02', '192', '978-85-45203-30-8', 5),
+('Viva a sua melhor versão', '2019-02-03', '192', '978-65-55440-48-5', 5),
+('Crie seu mercado no mundo digital', '2011-11-01', '208', '978-85-45202-68-4', 5),
+('Empreendedores', '2012-01-12', '240', '978-85-45203-31-5', 5),
+('Estratégia adaptativa', '2020-03-02', '304', '978-65-55440-32-4', 5),
+('Audaz', '2017-01-05', '224', '978-85-45202-67-7', 5),
+('Faça suas próprias leis', '2014-09-09', '224', '978-85-45202-76-9', 5),
+('Faça simples', '2002-08-05', '192', '978-85-45203-35-3', 5),
+('Sonhar alto, pensar grande', '2014-03-23', '224', '978-85-45200-92-5', 5),
+('Acorda! Sonhar não basta', '2017-01-22', '128', '978-85-45202-58-5', 5),
+('O único livro que todo empresário precisa ler', '2018-02-01', '160', '978-85-45201-95-3', 5),
+('Desperte seu conhecimento milionário', '2021-03-04', '160', '978-85-45203-32-2', 5),
+('Se vira, moleque', '2019-04-05', '224', '978-65-55440-21-8', 5),
+('12 princípios para uma vida extraordinária', '2011-11-11', '160', '978-85-45203-65-0', 5),
+('A sabedoria do dinheiro', '2012-12-12', '224', '978-85-45203-94-0', 5),
+('Transformação radical', '2020-12-11', '304', '978-65-55440-46-1', 5),
+('Seja um líder de heróis', '2017-10-01', '256', '978-85-45203-27-8', 5),
+('Bora vender', '2014-10-02', '224', '978-85-45203-21-6', 5),
+('Quero ficar rico', '2002-03-03', '144', '978-85-45201-22-9', 5),
+('A nova lógica do sucesso', '2002-02-02', '192', ' 978-85-45200-50-5', 5),
+('Problemas? Oba!', '2014-04-04', '160', ' 978-85-73127-53-9', 5),
+('O novo código da cultura', '2017-05-04', '224', '978-85-45203-29-2', 5),
+
+-- Editora Alta Books
+('Pai rico, pai pobre - Edição de 20 anos', '2011-06-09', '336', '978-85-50801-48-3', 5),
+('De zero a 50 milhões', '2012-09-03', '240', '978-65-55201-25-3', 5),
+('A universidade da Berkshire Hathaway', '2020-09-02', '384', '978-85-50810-58-4', 5),
+('Empatia assertiva', '2017-01-04', '328', '978-85-50810-78-2', 5),
+('Keynes e os Pós-Keyneasianos', '2014-09-07', '288', '978-85-50811-78-9', 5),
+('Dominando o Ciclo de Mercado', '2002-04-02', '336', '978-85-50808-78-9', 5),
+('Master selling', '2002-01-09', '256', ' 978-65-55201-36-9', 5),
+('Empresas feitas para vencer', '2014-09-21', '368', '978-85-50805-24-5', 5),
+('Empresas humanizadas', '2017-02-21', '368', '978-85-50807-53-9', 5)
+('Fake', '2011-12-21', '480', '978-85-50813-74-5', 5)
+('Líderes digitais', '2017-02-01', '352', '978-85-50815-35-0', 5)
+('Gratidão', '2017-02-21', '256', '978-85-50810-59-1', 5)
+('Análise fundamentalista', '2017-02-21', '208', '978-85-50804-72-9', 5)
+('Design thinking – Edição comemorativa 10 anos', '2017-02-21', '304', '978-85-50814-36-0', 5)
+('Desvendando a caixa-preta do sucesso', '2017-02-21', '256', '978-85-50816-57-9', 5)
+('As 4 disciplinas da execução', '2017-02-21', '352', '978-85-50801-39-1', 5)
+('Easy life', '2017-02-21', '184', '978-85-50813-72-1', 5)
+('Design thinking', '2017-02-21', '272', '978-85-50801-34-6', 5)
+('O guia do pai rico', '2017-02-21', '160', '978-85-50800-85-1', 5)
+('Nocaute', '2011-12-21', '232', '978-85-50810-24-9', 5)
+('O mercado de ações em 25 episódios', '2017-02-21', '256', '978-85-50810-72-0', 5)
+('Fique rico operando opções', '2017-02-21', '272', '978-85-50802-21-3', 5)
+('Switch', '2017-02-21', '320', '978-85-50804-69-9', 5)
+('Todo mundo mente', '2017-02-21', '352', '978-85-50802-17-6', 5)
+('A tríade da competência', '2017-02-21', '224', '978-85-50814-95-7', 5)
+('Mensageiros', '2017-02-21', '320', '978-85-50814-80-3', 5)
+('Empresas que curam', '2017-02-21', '304', '978-85-50815-14-5', 5)
+
+--Editora Sextante
+('Os segredos da mente milionária', '2011-06-01', '176', '978-85-75422-39-7', 5),
+('Me poupe!', '2013-07-02', '176', '978-85-43105-81-9', 5),
+('Essencialismo', '2002-09-02', '272', '978-85-43102-14-6', 5),
+('Comece pelo porquê', '2007-03-05', '256', '978-85-43106-63-2', 5),
+('As armas da persuasão', '2012-01-02', '304', '978-85-75428-09-2', 5),
+('Os segredos da mente milionária (edição comemorativa)', '2008-02-03', '192', '978-85-43109-78-7', 5),
+('Casais inteligentes enriquecem juntos', '2020-03-04', '176', '978-85-43101-43-9', 5),
+('Negocie como se sua vida dependesse disso', '2017-04-05', '256', '978-85-43108-05-6', 5),
+('A boa sorte', '2016-05-06', '128', '978-85-43103-25-9', 5),
+('Guia prático Me Poupe! – 33 dias para mudar sua vida financeira', '2015-06-07', '176', '978-65-55640-97-7', 5),
+('Desafios da gestão', '2017-02-21', '256', '978-85-43106-44-1', 5)
+('A arte de dar feedback', '2017-02-21', '192', '978-85-43107-30-1', 5)
+('A riqueza da vida simples', '2011-12-21', '176', '978-85-43107-45-5', 5)
+('O monge e o executivo', '2017-02-21', '144', '978-85-75421-02-4', 5)
+('Preciso saber se estou indo bem!', '2017-02-21', '144', '978-85-75421-90-1', 5)
+
+-- Editora Buzz
+('Seja foda!', '2011-06-09', '208', '978-85-93156-29-8', 5),
+('Enfodere-se!', '2012-09-03', '208', '978-65-80435-23-4', 5),
+('Ouse ser diferente', '2020-09-02', '224', '978-65-80435-49-4', 5),
+('Ponto de inflexão', '2017-01-04', '208', '978-85-93156-83-0', 5),
+('Transformando palavras em dinheiro', '2014-09-07', '176', '978-65-80435-44-9', 5),
+('A arte da guerra', '2002-04-02', '128', '978-85-93156-63-2', 5),
+('Por que as pessoas não fazem o que deveriam fazer?', '2002-01-09', '160', '978-85-93156-93-9', 5),
+('Trabalhe menos ganhe igual', '2014-09-21', '256', '978-65-86077-35-3', 5),
+('Persuasão', '2017-02-21', '152', '978-65-86077-50-6', 5)
+('A tríade do tempo', '2011-12-21', '208', '978-85-93156-39-7', 5)
+
+-- Editora Somos Educação
+('O jeito Harvard de ser feliz', '2017-01-04', '216', '978-85-02180-26-0', 5),
+('Vade Mecum Saraiva 2020- 29ª Edição', '2014-09-07', '2568', '978-85-53615-40-7', 5),
+('O Jeito Warren Buffett de investir', '2002-04-02', '296', '978-85-57173-06-4', 5),
+('Vade Mecum Saraiva 2020 - 30ª Edição', '2002-01-09', '2568', '978-65-55592-10-8', 5),
+('O jeito Disney de encantar os clientes', '2014-09-21', '168', '978-85-02124-04-2', 5),
+('Vade Mecum 2015', '2017-02-21', '2184', '978-85-02616-59-2', 5)
+
+-- Editora Grupo Editorial Record
+('Picos e vales', '2017-01-04', '128', '978-85-76843-87-0', 5),
+('Os 7 hábitos das pessoas altamente eficazes', '2014-09-07', '462', '978-85-76840-62-6', 5),
+('Antifrágil', '2002-04-02', '664', '978-85-76846-13-0', 5),
+('Nosso iceberg está derretendo (edição comemorativa)', '2002-01-09', '176', '978-85-46501-07-6', 5),
+('A lógica do cisne negro', '2014-09-21', '464', '978-85-76842-12-5', 5),
+
+
+
+
+
+
+
+
+
+
 GO
