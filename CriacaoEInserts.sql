@@ -268,7 +268,7 @@ INSERT INTO [dbo].[Autor]
 VALUES
 
 ------------ Auutores de Livros de AutoAjuda
-('Adriana Sant'anna','1964-11-27','F',1),
+('Adriana Sant anna','1964-11-27','F',1),
 ('José Roberto Marques','1999-04-25','M',1),
 ('Karina Peloi','1945-09-16','F',1),
 ('Paula Abreu','1978-01-13','F',1),
